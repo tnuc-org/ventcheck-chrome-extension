@@ -1,0 +1,243 @@
+body.tnuc { 
+	   font-family: Verdana,Arial,sans-serif;
+	    background: #FFF2D8;
+	     font-size: 13px;
+	         color: #5A2800;
+	padding-bottom: 10px;
+}
+
+body:not(.tnuc) > #tnuc_wrap,
+body.tnuc > :not(#tnuc_wrap):not(#tnuc_overlay),
+body.tnucmin > #tnuc_overlay {
+	display: none !important;
+}
+
+body.tnuc.tnucmin, body.tnuc.tnucmin > * {
+	white-space:nowrap;
+	overflow: hidden;
+	text-align:left!important;
+	width:auto!important;
+	margin:3px!important;
+	padding:0px!important;
+}
+body.tnucmin #tnuc_wrap {
+	margin:3px!important;
+	padding:0px!important;
+}
+
+#tnuc_wrap {
+	       margin: 0 auto;
+	   margin-top: 15px;
+	margin-bottom: 10px;
+	        width: 500px;
+	         left: -300px;
+	   text-align: center;
+}
+
+#tnuc_tables {
+	font-weight: bold;
+	 margin-top: 30px;
+
+}
+#tnuc_chans,
+#tnuc_conns {
+	float: left;
+	width: 220px;
+}
+#tnuc_conns {
+	float: right;
+}
+
+#tnuc_foot {
+	text-align: center;
+}
+
+.tnuc table {
+	border: 0;
+}
+
+.tnuc h1,.tnuc h2 {
+	color: #5A2800;
+}
+
+.tnuc tr {
+	text-align: center;
+	background: #F1E0C6; 
+	     color: #5A2800; 
+}
+
+.tnuc tr.hdr {
+	font-weight: bold; 
+	 background: #505050;
+	      color: #FFF;
+}
+
+.tnuc tr.sum {
+	background: #d4c0a1;
+	     color: #5A2800;
+}
+
+.tnuc tr.fmt {
+	background: #FFF2D8; 
+}
+
+.tnuc a, .tnuc a:link, .tnuc a:visited, .tnuc a:active {
+	text-decoration: none;
+	    font-weight: bold;
+	          color: #004294;
+	
+}
+
+.tnuc a:hover, .tnuc a:focus { 
+	text-decoration: underline; 	
+}
+
+.tnuc .ctr {
+	text-align: center;
+}
+
+.tnuc .bld,
+.tnuc .bld td{
+	font-weight: bold;
+}
+
+.tnuc .r {
+	text-align: right;
+}
+
+.tnuc .l {
+	text-align: left;
+}
+
+
+.tnuc .fr,
+.tnuc .fr td {
+	color: #F00;
+}
+.tnuc .fy,
+.tnuc .fy td {
+	color: #EEAA00;
+}
+.tnuc .fg,
+.tnuc .fg td {
+	color: #00AA00;
+}
+.tnuc .fb,
+.tnuc .fb td {
+	color: #4072D4;
+}
+
+.tnuc .br {
+	background: #F00;
+	     color: #F00;
+}
+
+.tnuc .by {
+	background: #EEAA00;
+	     color: #EEAA00;
+}
+
+.tnuc .bg {
+	background: #00AA00;
+	     color: #00AA00;
+}
+
+.tnuc .bb {
+	background: #4072D4;
+	     color: #4072D4;
+}
+
+.tnuc input, .tnuc button {
+	border: 1px solid #5A2800;
+	background: transparent;
+	color: #5A2800;
+	font-weight: bold;
+	display: inline-block;
+	width: 136px;
+	outline: none;
+}
+
+.tnuc button {
+	color: #004294;
+	width: 50px;
+	margin-left: 2px;
+}
+
+.tnuc button.big {
+	width: 188px;
+	margin-left: 0px;
+}
+
+.tnuc button.error {
+	color: red!important;
+}
+
+#tnuc_overlay {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+			     width: 200px;
+	           display: block;
+	          position: absolute;
+	          position: fixed;
+				   top: 10px;
+	              left: 10px;
+	       font-family: Verdana,Arial,sans-serif;
+	        font-size: 13px;
+	            color: #5A2800;
+	       background: #FFF2D8;
+	          padding: 5px;
+	           border: 1px solid #5A2800;
+	       overflow-x: hidden;
+}
+
+#tnuc_overlay b {
+	      display: block;
+	        width: auto;
+	border-bottom: 1px solid #5A2800;
+}
+
+#tnuc_serverlist {
+	   margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.tnuc_server {
+	     position: relative;
+	  font-weight: bold;
+	        width: 100%;
+	      display:inline-block;
+	   margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.tnuc_server .tnuc_rmserver {
+	position: absolute;
+	display: none;
+	top: 0px;
+	right: 0px;
+	height: 10px;
+	color: red!important;
+	padding-left: 4px;
+	background: #FFF2D8;
+	font-size: 12px;
+	border-left: 1px solid #5A2800;
+}
+.tnuc_server:hover .tnuc_rmserver {
+	display: block;
+}
+
+.tnuc tr.hovered {
+	background: #d4c0a1!important;
+}
+.tnuc_endmin {
+	position: absolute;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	border:none;
+	border-top: 1px solid #5A2800;
+	border-left: 1px solid #5A2800;
+	font-size: 13px;
+	color:red!important;
+}

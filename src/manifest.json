@@ -1,0 +1,16 @@
+{
+	"name": "tnuC Ventcheck",
+	"version": "1.0.3",
+	"manifest_version": 2,
+	"description": "Advanced Ventrilo status lookup. Go to www.ventrilo.com/status.php to invoke.",
+	"content_scripts": [{
+      "matches": ["http://*.ventrilo.com/status.php*", "http://ventrilo.com/status.php*"],
+      "css": ["vcheck.min.css"],
+      "js": ["vcheck.min.js"]
+	}],
+	"homepage_url": "http://ventcheck.tnuc.org",
+	"incognito": "spanning",
+	"minimum_chrome_version": "18",
+	"permissions": ["http://*.ventrilo.com/status.php*", "http://ventrilo.com/status.php*", "unlimitedStorage"],
+	"update_url": "http://ventcheck.tnuc.org/update.xml"
+}
